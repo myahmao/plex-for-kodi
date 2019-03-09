@@ -302,13 +302,13 @@ class DumbInterface(AppInterface):
         None: {}
     }
     _globals = {
-        'platform': platform.uname()[0],
+        'platform': 'iOS', #platform.uname()[0],
         'appVersionStr': '0.0.0a1',
         'clientIdentifier': str(hex(uuid.getnode())),
-        'platformVersion': platform.uname()[2],
+        'platformVersion': '12.1.1', #platform.uname()[2],
         'product': 'PlexNet.API',
         'provides': 'player',
-        'device': platform.uname()[0],
+        'device': 'iOS', #platform.uname()[0],
         'model': 'Unknown',
         'friendlyName': 'PlexNet.API',
         'deviceInfo': DeviceInfo()
